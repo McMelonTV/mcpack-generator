@@ -1,0 +1,19 @@
+{
+    "format_version": 2,
+    "header": {
+      "description": "Made by McMelonTV",
+      "name": "(Void) World Generator: {HEIGHTS}",
+      "uuid":"{UUID1}",
+      "version": [1, 0, 0],
+      "min_engine_version": [1, 18, 30]
+    },
+    "modules":
+    [
+        {
+          "description": "World Generator made by McMelonTV",
+            "type": "data",
+            "uuid": "{UUID2}",
+            "version": [1, 0, 0]
+        }
+      ]
+}
