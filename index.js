@@ -75,7 +75,7 @@ app.get('/api', (request, reply) => {
 		reply.send({ message: 'Usage: POST /api with a body of {"height": <INT -512 to 512>, "theight": <INT -512 to 512>}' })
 })
 
-app.listen(9090, (err) => {
+app.listen({ port: 9090, host: '0.0.0.0' }, (err) => {
 	if (err) {
 		console.error(err)
 		process.exit(1)
