@@ -3,7 +3,7 @@ Template NodeJS+Fastify site to generate Minecraft Bedrock Edition addons with c
 
 There is also an older PHP version in the [php-version branch](https://github.com/McMelonTV/mcpack-generator/tree/php-version)
 
-Demo: Soon
+[DEMO Site](http://node3.nodiumhosting.com:9090/)
 
 ### How to use
 0. Install [NodeJS](https://nodejs.org/)
@@ -13,4 +13,4 @@ Demo: Soon
 4. Run `node .` or `node index.js` in the downloaded folder
 5. Access the site and api on https://localhost:9090
 
-Made by [WolfDen133](https://github.com/WolfDen133) and [McMelon](https://github.com/McMelonTV) | [NodiumHosting.com](https://nodiumhosting.com)
+> Made by [WolfDen133](https://github.com/WolfDen133) and [McMelon](https://github.com/McMelonTV) | [NodiumHosting.com](https://nodiumhosting.com)
