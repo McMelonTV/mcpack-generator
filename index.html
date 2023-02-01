@@ -73,14 +73,14 @@
 	</head>
 	<body>
 		<h1 class="header">World Height Pack Generator</h1>
-		<form action="/action.php" method="post">
+		<form action="action.php" method="post">
 			<label for="height">Bottom Height </label>
 			<input name="height" type="number" min="-512" max="512" required><br>
 			<label for="theight">Top Height </label>
 			<input name="theight" type="number" min="-512" max="512" required><br>
 			<input type="submit" value="Download"><br><br>
 		</form>
-		<h4 class="footer">Made by <a class="footerlink melon" href="https://github.com/McMelonTV">McMelon</a> | Hosted by <a class="footerlink nodium" href="https://nodiumhosting.com">NodiumHosting.com</a></h1>
+		<h4 class="footer">Made by <a class="footerlink melon" href="https://github.com/McMelonTV">McMelon</a> | Hosted by <a class="footerlink nodium" href="https://nodiumhosting.com">NodiumHosting.com</a></h4>
 		<script>
 			document.querySelector('input[name="height"]').addEventListener('change', (e) => {
 				e.target.value = Math.round(e.target.value / 16) * 16;
