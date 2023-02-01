@@ -1,9 +1,6 @@
-# mcpack-generator-php
-A simple php site to generate edited minecraft bedrock edition addons per user. No documentation since im too lazy to write it but ask me anything in issues.
+# PHP Minecraft Addon Generation
+A template PHP script to generate Minecraft Bedrock Edition addons with content edited per user based on their input. There is currently no documentation but it should be pretty easy to understand with a basic knowledge of PHP
 
+Demo: <Soon>
 
-Made by [ฬ๏ɭŦ๔єภ133;#6969](https://github.com/WolfDen133) and [McMelon#9999](https://github.com/McMelonTV)
-
-Demo: https://html.yt-dl.tk/minecraft/bedrock/worldgen/
-
-Also check out Nodium Hosting: https://nodiumhosting.com/
+Made by [WolfDen133](https://github.com/WolfDen133) and [McMelon](https://github.com/McMelonTV) | [NodiumHosting.com](https://nodiumhosting.com)
