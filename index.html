@@ -1,0 +1,110 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>World Height Pack Generator</title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&amp;display=swap" rel="stylesheet">
+		<style>
+			* {
+				font-family: 'Montserrat', sans-serif;
+			}
+			body {
+				background-color: #222;
+			}
+			form {
+				margin: 30px auto;
+				width: 50%;
+				padding: 30px;
+				text-align: center;
+				background-color: #444;
+				border-radius: 10px;
+				box-shadow: 0 0 10px #44bbbb;
+			}
+			label {
+				font-size: 18px;
+				font-weight: bold;
+				margin-right: 10px;
+				color: #CCC;
+			}
+			input[type="number"] {
+				width: 150px;
+				height: 40px;
+				font-size: 18px;
+				padding: 10px;
+				margin-bottom: 20px;
+				background-color: #666;
+				color: #BBB;
+				border-radius: 10px;
+				border: 1px solid #333;
+			}
+			input[type="submit"] {
+				width: 150px;
+				height: 40px;
+				background-color: #00ffff;
+				color: #333;
+				font-size: 18px;
+				border: none;
+				border-radius: 10px;
+				cursor: pointer;
+				box-shadow: 0 0 10px #00ffff;
+			}
+			.header {
+				text-align: center;
+				color: #CCC;
+				margin-top: 50px;
+			}
+			.footer {
+				text-align: center;
+				color: #CCC;
+			}
+			.footerlink {
+				text-decoration: none; 
+			}
+			.melon {
+				color: #ff3131 !important;
+				text-shadow: 0 0 10px #ff3131 !important;
+			}
+			.nodium {
+				color: #39ff14 !important;
+				text-shadow: 0 0 10px #39ff14 !important;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="header">World Height Pack Generator</h1>
+		<form action="/action.php" method="post">
+			<label for="height">Bottom Height </label>
+			<input name="height" type="number" min="-512" max="512" required><br>
+			<label for="theight">Top Height </label>
+			<input name="theight" type="number" min="-512" max="512" required><br>
+			<input type="submit" value="Download"><br><br>
+		</form>
+		<h4 class="footer">Made by <a class="footerlink melon" href="https://github.com/McMelonTV">McMelon</a> | Hosted by <a class="footerlink nodium" href="https://nodiumhosting.com">NodiumHosting.com</a></h1>
+		<script>
+			document.querySelector('input[name="height"]').addEventListener('change', (e) => {
+				e.target.value = Math.round(e.target.value / 16) * 16;
+
+				if (e.target.value < -512) {
+					e.target.value = -512;
+				} else if (e.target.value > 512) {
+					e.target.value = 512;
+				}
+			});
+
+			document.querySelector('input[name="theight"]').addEventListener('change', (e) => {
+				e.target.value = Math.round(e.target.value / 16) * 16;
+
+				if (e.target.value < -512) {
+					e.target.value = -512;
+				} else if (e.target.value > 512) {
+					e.target.value = 512;
+				}
+			});
+
+			document.querySelector('input[type="submit"]').addEventListener('click', (e) => {
+				e.target.value = 'Generating...';
+			});
+		</script>
+	</body>
+</html>
